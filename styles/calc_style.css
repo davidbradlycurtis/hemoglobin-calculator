@@ -1,0 +1,162 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Adamina';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Adamina'), local('Adamina-Regular'),
+      url('../fonts/adamina-regular.ttf') format('ttf');
+  }
+  
+  :root {
+    --medical-blue: #0033cc;
+  }
+  
+  a {
+    color: var(--medical-blue);
+  }
+
+  h1 {
+    margin-top: 2rem;
+    color: var(--medical-blue);
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    color: var(--medical-blue);
+    text-align: center;
+  }
+  
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(80, 80, 80);
+  }
+  
+  code {
+    font-size: 80%;
+  }
+  
+  .checklist > li {
+    list-style-type: none;
+  }
+  
+  .img-thumbnail {
+    border-width: 0;
+    margin: 0.125in;
+    min-width: 1in;
+  }
+  
+  .bg-medical-blue {
+    background-color: var(--medical-blue) !important;
+  }
+  
+  .highlight {
+    background-color: yellow;
+  }
+  
+  td,
+  th {
+    word-break: normal;
+  }
+  
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    border-color: darkgrey;
+    text-align: center;
+  }
+  
+  .tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    border-color: darkgrey;
+    background-color: var(--medical-blue);
+    color: white;
+  }
+  
+  .thead-dark {
+    background-color: var(--medical-blue);
+    color: white;
+  }
+  
+  mark {
+    background: rgb(0, 255, 34);
+  }
+  
+  .professor-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .professor-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .contribution-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contribution-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  input {
+    margin-right: 2em;
+  }
+  
+  .tap-target-a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tap-target-li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .state-icon {
+    margin-left: -5px;
+    margin-right: 5px;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .list-group-item-primary {
+    color: rgb(255, 255, 255);
+    background-color: var(--medical-blue) !important;
+  }
+  
+  .list-group-item-primary > a {
+    color: rgb(255, 255, 255);
+    background-color: var(--medical-blue) !important;
+    text-decoration: underline;
+  }
