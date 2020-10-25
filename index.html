@@ -59,39 +59,43 @@
 
     <main class="container context mt-5">
       <!-- Main container-->
-      <div class="row">
-        <div class="col">
+      <div class="main">
+        <div id="content">
+          <article id="post">
+            <header id="entry-header">
+              <h1>Hemoglobin Calculator</h1>
+            </header>
 
-          <h1>Hemoglobin Calculator</h1>
-
-          <form>
-            <table class="table">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">Weight</th>
-                  <th scope="col">Serum Hemoglobin</th>
-                  <th scope="col">Fluid Administered</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <input type="text" id="weight" name="weight">
-                  </th>
-                  <td>
-                    <input type="text" id="serumHem" name="serumHem">
-                  </td>
-                  <td>
-                    <input type="text" id="fluidAdmin" name="fluidAdmin">
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><input type="submit" value="Submit"></th>
-                  <td><input type="reset"></td>
-                </tr>
-              </tbody>
-            </table>
-          </form>
+            <div class="entry-content">
+              <div id="calc-ui">
+                <div id="calc-main">
+                  <form onsubmit="claculatehemoglobin.js"; autocomplete="off">
+                    <p class="description">This calculator will clalculate the hemoglobin</p>
+                    <p> 
+                      <span class="attribute_d">Weight</span>
+                      <input id="weight" class="attribute" type="text" placeholder="(e.g. 60)">
+                    (kg)
+                    </p>
+                    <p>
+                      <span class="attribute_d">Serum Hemoglobin</span>
+                      <input id="hemoglobin" class="attribute" type="text" placeholder="(e.g. 12)">
+                    (g/dL)
+                    </p>
+                    <p>
+                      <span class="attribute_d">Fluid Administered</span>
+                      <input id="fluid" class="attribute" type="text" placeholder="(e.g. 2)">
+                    (L)
+                    </p>
+                    <p>
+                      <button class="submit-btn" onclick="calculatehemoglobin.js" type="submit">Calculate</button> 
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </main>
 
     <calc-footer
