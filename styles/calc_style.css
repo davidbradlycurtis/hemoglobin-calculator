@@ -14,6 +14,10 @@
   .bg-medical-blue {
     background-color: var(--medical-blue) !important;
   }
+
+  .main {
+    padding-bottom: 60px;
+  }
   
   .ui {
     text-align: center;
@@ -30,7 +34,6 @@
     width: 90%;
   }
   .check-title {
-    padding: 4px;
     text-align: left;
   }
 
@@ -74,6 +77,18 @@
     background-color: yellow;
   }
   
+  .answer-box {
+    display: block;
+    width: 95%;
+    margin: auto;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: Left;
+    background-color: white;
+  }
   
   .thead-dark {
     background-color: var(--medical-blue);
@@ -81,7 +96,7 @@
   }
   
   input {
-    margin-right: 2em;
+    margin-left: 2pt;
   }
 
   input.invalid {

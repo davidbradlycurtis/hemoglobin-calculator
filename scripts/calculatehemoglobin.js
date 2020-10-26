@@ -8,41 +8,33 @@
 
 function calculatehemoglobin() {
 
-    var weight = document.getElementById("weight").value;
-    var hemoglobin = document.getElementById("hemoglobin").value;
-    var fluid = document.getElementById("fluid").value;
-    var male = document.getElementsById("male").value;
-    alert(male);
-    var female = document.getElementsById("female").value;
-    var bloodVolume;
+  document.getElementById("answer-box").innerHTML = ""; 
 
-    //Blood Volume
-    if (male == True) {
-        bloodVolume = (weight * 75) / 100;
-    }
-    else if (female == True) {
-        bloodVolume = (weight * 60) / 100;
-    }
-    else {
-        bloodVolume = (weight * 67.5) / 100;
-    }
+  var weight = document.getElementById("weight").value;
+  var hemoglobin = document.getElementById("hemoglobin").value;
+  var fluid = document.getElementById("fluid").value;
+  var bloodVolume;
 
-    //Total Hemoglobin
-    var totalHemiglobin = (hemoglobin * bloodVolume);
+  //Blood Volume
+  if (male.checked) {
+      bloodVolume = (weight * 75) / 100;
+  }
+  else if (female.checked) {
+      bloodVolume = (weight * 65) / 100;
+  }
+  else {
+      alert("Please select a sex.");
+      return;
+  }
 
-    //Fluid Shit
-    var bloodVolume = bloodVolume + fluid * .25;
+  //Total Hemoglobin
+  var totalHemiglobin = (hemoglobin * bloodVolume);
 
-    var total = totalHemiglobin / bloodVolume;
+  //Fluid Shit
+  var bloodVolume = (bloodVolume / 10) + fluid * .25;
+  var total = (totalHemiglobin / bloodVolume) / 10;
 
-    alert(female);
-
-
-
-
-
-
-
+  document.getElementById('answer-box').innerHTML = Math.round((total + Number.EPSILON) * 100) / 100;
 }
 
 function validate() {

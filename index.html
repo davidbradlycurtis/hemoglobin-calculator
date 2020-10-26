@@ -70,13 +70,13 @@
               <div id="calc-ui" class="ui">
                 <div id="calc-main">
                   <form onsubmit="claculatehemoglobin.js"; autocomplete="off">
-                    <p class="description">This calculator will clalculate the hemoglobin</p>
+                    <p class="answer-box" id="answer-box"></p>
                     <p>
                       <span class="attribute_d check-title">Sex<br></span>
-                      <label>
-                        <input type="radio" id="male" value=True name="sex" />Male</label>
-                      <label>
-                        <input type="radio" id="female" value=True name="sex">Female</label>
+                      <input type="radio" id="male" name="gender" value="male">
+                      <label for="male">Male</label>
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label for="female">Female</label>
                     </p>
                     <p> 
                       <span class="attribute_d">Weight (kg)</span>
@@ -91,7 +91,7 @@
                       <input required id="fluid" class="attribute" type="text" placeholder="(e.g. 2)">
                     </p>
                     <p>
-                      <button class="submit-btn" onclick="calculatehemoglobin()" type="submit">Calculate</button> 
+                      <button class="submit-btn" onclick="calculatehemoglobin();return false;" type="submit">Calculate</button> 
                     </p>
                   </form>
                 </div>
