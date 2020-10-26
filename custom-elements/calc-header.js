@@ -8,7 +8,7 @@ class calcHeader extends HTMLElement {
       p-2">
   
       <!-- Navbar brand -->
-      <a rel="noopener" class="navbar-brand bg-medical-blue"
+      <a rel="noopener" class="navbar-brand"
         href="#">${this.getAttribute('shortNum')}</a>
   
       <!-- Collapse button -->

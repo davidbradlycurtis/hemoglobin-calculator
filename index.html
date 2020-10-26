@@ -67,33 +67,47 @@
             </header>
 
             <div class="entry-content">
-              <div id="calc-ui">
+              <div id="calc-ui" class="ui">
                 <div id="calc-main">
                   <form onsubmit="claculatehemoglobin.js"; autocomplete="off">
                     <p class="description">This calculator will clalculate the hemoglobin</p>
+                    <p>
+                      <span class="attribute_d check-title">Sex<br></span>
+                      <label>
+                        <input type="radio" id="male" value=True name="sex" />Male</label>
+                      <label>
+                        <input type="radio" id="female" value=True name="sex">Female</label>
+                    </p>
                     <p> 
-                      <span class="attribute_d">Weight</span>
-                      <input id="weight" class="attribute" type="text" placeholder="(e.g. 60)">
-                    (kg)
+                      <span class="attribute_d">Weight (kg)</span>
+                      <input required id="weight" class="attribute" type="text" placeholder="(e.g. 60)">
                     </p>
                     <p>
-                      <span class="attribute_d">Serum Hemoglobin</span>
-                      <input id="hemoglobin" class="attribute" type="text" placeholder="(e.g. 12)">
-                    (g/dL)
+                      <span class="attribute_d">Serum Hemoglobin (g/dL)</span>
+                      <input required id="hemoglobin" class="attribute" type="text" placeholder="(e.g. 12)">
                     </p>
                     <p>
-                      <span class="attribute_d">Fluid Administered</span>
-                      <input id="fluid" class="attribute" type="text" placeholder="(e.g. 2)">
-                    (L)
+                      <span class="attribute_d">Fluid Administered (L)</span>
+                      <input required id="fluid" class="attribute" type="text" placeholder="(e.g. 2)">
                     </p>
                     <p>
-                      <button class="submit-btn" onclick="calculatehemoglobin.js" type="submit">Calculate</button> 
+                      <button class="submit-btn" onclick="calculatehemoglobin()" type="submit">Calculate</button> 
                     </p>
                   </form>
                 </div>
               </div>
             </div>
           </article>
+
+          <h2>What is this for?</h2>
+          <p class="about">Anemia amongst hospitalized patients is widespread, occurring in up to 75% of inpatients. 
+            In addition to primary hematologic diseases, contributing factors include acute illness, phlebotomy and dilutional anemia.
+            In fact, intravenous fluids are given to a majority of inpatients at some point during their hospitalization, and studies on 
+            fluid resuscitation in sepsis highlight the significant effect of hemodilution on anemia. With increasing recognition of the 
+            risks of over-transfusion of red blood cells, properly identifying dilutional anemia is important for patient care. 
+            Clinicians may benefit from using a simple, quantitative approach to predict how much a patient’s hemoglobin concentration will 
+            change from a given intravenous fluid load. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7153686/">-A Quantitative Approach to Dilutional Anemia</a>
+          </p>
         </div>
       </div>
     </main>
@@ -104,6 +118,7 @@
     >
     </calc-footer>
 
+    <script type="text/javascript" src="./scripts/calculatehemoglobin.js"></script>
     <script defer src="./custom-elements/calc-header.js"></script>
     <script defer src="./custom-elements/calc-footer.js"></script>
 
