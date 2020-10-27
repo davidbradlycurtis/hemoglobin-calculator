@@ -70,9 +70,10 @@
               <div id="calc-ui" class="ui">
                 <div id="calc-main">
                   <form onsubmit="claculatehemoglobin.js"; autocomplete="off">
-                    <p class="answer-box" id="answer-box"></p>
+                    <label for="result"></label>
+                    <input type="text" class="result" id="result" name="result" value="" readonly><br><br>
                     <p>
-                      <span class="attribute_d check-title">Sex<br></span>
+                      <span class="attribute_d check-title">Sex</span>
                       <input type="radio" id="male" name="gender" value="male">
                       <label for="male">Male</label>
                       <input type="radio" id="female" name="gender" value="female">
@@ -88,7 +89,7 @@
                     </p>
                     <p>
                       <span class="attribute_d">Fluid Administered (L)</span>
-                      <input required id="fluid" class="attribute" type="text" placeholder="(e.g. 2)">
+                      <input required id="fluid" class="attribute" type="text" placeholder="(e.g. 4)">
                     </p>
                     <p>
                       <button class="submit-btn" onclick="calculatehemoglobin();return false;" type="submit">Calculate</button> 
@@ -100,7 +101,7 @@
           </article>
 
           <h2>What is this for?</h2>
-          <p class="about">Anemia amongst hospitalized patients is widespread, occurring in up to 75% of inpatients. 
+          <p class="para">Anemia amongst hospitalized patients is widespread, occurring in up to 75% of inpatients. 
             In addition to primary hematologic diseases, contributing factors include acute illness, phlebotomy and dilutional anemia.
             In fact, intravenous fluids are given to a majority of inpatients at some point during their hospitalization, and studies on 
             fluid resuscitation in sepsis highlight the significant effect of hemodilution on anemia. With increasing recognition of the 
@@ -108,6 +109,22 @@
             Clinicians may benefit from using a simple, quantitative approach to predict how much a patient’s hemoglobin concentration will 
             change from a given intravenous fluid load. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7153686/">-A Quantitative Approach to Dilutional Anemia</a>
           </p>
+
+          <h2>Disclaimer for Hemoglobin Calculator</h2>
+
+          <p class="para">If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at Anna.kcurtis@gmail.com.</p>
+
+          <h2>Disclaimers for Diltionalanemiacalc</h2>
+
+          <p class="para">All the information on this website - Diltionalanemiacalc.com - is published in good faith and for general information purpose only. Diltionalanemiacalc does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (Diltionalanemiacalc), is strictly at your own risk. Diltionalanemiacalc will not be liable for any losses and/or damages in connection with the use of our website.</p>
+
+          <h2>Consent</h2>
+
+          <p class="para">By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+
+          <h2>Update</h2>
+
+          <p class="para">Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
         </div>
       </div>
     </main>

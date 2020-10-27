@@ -12,7 +12,7 @@ class calcHeader extends HTMLElement {
         href="#">${this.getAttribute('shortNum')}</a>
   
       <!-- Collapse button -->
-      <button class="navbar-toggler bg-medical-blue" type="button"
+      <button class="navbar-toggler" type="button"
         data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false"
         aria-label="Toggle navigation">

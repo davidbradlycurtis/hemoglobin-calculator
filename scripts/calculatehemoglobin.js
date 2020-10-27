@@ -8,7 +8,7 @@
 
 function calculatehemoglobin() {
 
-  document.getElementById("answer-box").innerHTML = ""; 
+  document.getElementById("result").value = ""; 
 
   var weight = document.getElementById("weight").value;
   var hemoglobin = document.getElementById("hemoglobin").value;
@@ -17,24 +17,19 @@ function calculatehemoglobin() {
 
   //Blood Volume
   if (male.checked) {
-      bloodVolume = (weight * 75) / 100;
+    bloodVolume = (weight * 75) / 100;
   }
   else if (female.checked) {
-      bloodVolume = (weight * 65) / 100;
+    bloodVolume = (weight * 65) / 100;
   }
   else {
-      alert("Please select a sex.");
-      return;
+    alert("Please select a sex.");
+    return;
   }
 
-  //Total Hemoglobin
-  var totalHemiglobin = (hemoglobin * bloodVolume);
+  var result = ((hemoglobin * bloodVolume) / ((bloodVolume / 10) + fluid * .25)) / 10;
 
-  //Fluid Shit
-  var bloodVolume = (bloodVolume / 10) + fluid * .25;
-  var total = (totalHemiglobin / bloodVolume) / 10;
-
-  document.getElementById('answer-box').innerHTML = Math.round((total + Number.EPSILON) * 100) / 100;
+  document.getElementById("result").value = String(Math.round((result + Number.EPSILON) * 100) / 100) + " g/dL";
 }
 
 function validate() {

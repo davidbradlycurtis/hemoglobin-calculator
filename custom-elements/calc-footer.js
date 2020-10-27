@@ -9,7 +9,7 @@ class calcFooter extends HTMLElement {
       );
       this.innerHTML = `
       <!-- Sticky footer with padding (py level 3) on y-axis (top and bottom) -->
-    <footer class="footer bg-light mx-0 py-3 fixed-bottom text-center">
+    <footer class="footer bg-light mx-0 py-3 text-center">
       <a target="_blank" rel="noopener" 
       href="https://www.linkedin.com/in/anna-curtis-b0266397/">Anna Curtis</a>
       &nbsp; &#9670; &nbsp;

@@ -16,7 +16,7 @@
   }
 
   .main {
-    padding-bottom: 60px;
+    padding-bottom: 12px;
   }
   
   .ui {
@@ -29,12 +29,13 @@
     width: 90%;
   }
 
-  .about {
-    text-indent: 4%;
+  .para {
     width: 90%;
   }
+
   .check-title {
     text-align: left;
+    margin-right: 5pt;
   }
 
   .submit-btn {
@@ -50,11 +51,12 @@
   }
 
   .attribute {
-    text-align: center;
+    text-align: left;
   }
 
   .attribute_d {
     font-size: large;
+    color: black;
   }
 
   h1 {
@@ -69,15 +71,8 @@
     text-align: left;
   }
   
-  code {
-    font-size: 80%;
-  }
   
-  .highlight {
-    background-color: yellow;
-  }
-  
-  .answer-box {
+  .result {
     display: block;
     width: 95%;
     margin: auto;
